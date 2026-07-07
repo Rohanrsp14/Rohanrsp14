@@ -24,7 +24,7 @@ I'm a seasoned Product Manager with a Master's in Business Analytics and I'm arc
 <br />
 
 #
-![Rohan's GitHub stats](https://github-readme-stats.vercel.app/api?username=Rohanrsp14&show_icons=true&theme=gruvbox)
+[![Rohan's GitHub stats](https://github-readme-stats.vercel.app/api?username=Rohanrsp14&show_icons=true&theme=gruvbox&cache_seconds=86400)](https://github.com/Rohan14)
 
 <!-- ![GitHub Streak](https://streak-stats.demolab.com?user=Rohanrsp14&theme=gruvbox&border_radius=4.5) -->
 
