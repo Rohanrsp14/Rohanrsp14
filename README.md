@@ -46,10 +46,20 @@ I'm a Technical Product Manager focused on **AI/ML products** like RAG systems, 
 
 | Project | What it does | Stack |
 |---|---|---|
-| **AI Credit-Risk Monitoring Simulator** | Champion/challenger ML pipeline (LogReg vs. Gradient Boosting vs. Random Forest) on data calibrated to Fed and HMDA benchmarks, with decile lift tables and an interactive risk dashboard. Built to explore model validation gaps in regulated finance. | `Python` · `scikit-learn` · `Pandas` · `Streamlit` |
+| **[Credit-Risk-Monitor](https://github.com/Rohanrsp14/Credit-Risk-Monitor)** | Champion/challenger credit-risk model (Logistic Regression vs. XGBoost) on real 2022 HMDA Texas mortgage data, with a fair-lending parity screen, PSI drift monitoring, and an interactive Texas county risk heatmap. [Live demo →](https://credit-risk-monitor.streamlit.app) | `Python` · `XGBoost` · `Streamlit` · `HMDA Data` |
 | **Automated Job-Discovery Pipeline** | Pulls live job listings, scores fit against a weighted rubric, and tailors applications. Built as a modular pipeline: discovery, then scoring, then tailoring. | `Python` · `Supabase` · `LLM APIs` |
 | **Resume Optimizer Agent** | LLM agent that scores how well a resume fits a job description on a weighted rubric across four categories, then rewrites bullets to anchored length and impact rules. | `Claude API` · `Prompt Engineering` · `RAG` |
 | **FinanceOS** | Personal finance app with transaction intelligence, categorization, and forecasting. | `TypeScript` · `Supabase` · `Claude Code` |
+
+<p>
+  <a href="https://credit-risk-monitor.streamlit.app">
+    <img src="https://img.shields.io/badge/Live%20Demo-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
+  </a>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XGBoost-337AB7?style=flat-square"/>
+  <img src="https://img.shields.io/badge/HMDA%20Data-2E8B57?style=flat-square"/>
+</p>
 
 ---
 
