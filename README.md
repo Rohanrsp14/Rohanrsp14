@@ -42,11 +42,12 @@ I'm a Technical Product Manager focused on **AI/ML products** like RAG systems, 
 
 ### 🚀 Featured Work
 
-> 📌 These four are pinned above. Each repo has its own README with the problem, the approach, and the outcome.
+> 📌 These five are pinned above. Each repo has its own README with the problem, the approach, and the outcome.
 
 | Project | What it does | Stack |
 |---|---|---|
 | **[Credit-Risk-Monitor](https://github.com/Rohanrsp14/Credit-Risk-Monitor)** | Champion/challenger credit-risk model (Logistic Regression vs. XGBoost) on real 2022 HMDA Texas mortgage data, with a fair-lending parity screen, PSI drift monitoring, and an interactive Texas county risk heatmap. [Live demo →](https://credit-risk-monitor.streamlit.app) | `Python` · `XGBoost` · `Streamlit` · `HMDA Data` |
+| **[Lending-Policy-Simulator](https://github.com/Rohanrsp14/Lending-Policy-Simulator)** | Champion/challenger consumer-lending policy simulator on real Lending Club loan data — RAROC-based economic analysis (not just accuracy), a vintage loss-curve analysis, and a fair-lending screen. Independent-style model validation report documents every issue found and fixed, including a case where a statistically better model didn't translate to better economics. [Live demo →](https://lending-policy-simulator.streamlit.app) | `Python` · `scikit-learn` · `Streamlit` · `Lending Club Data` |
 | **Automated Job-Discovery Pipeline** | Pulls live job listings, scores fit against a weighted rubric, and tailors applications. Built as a modular pipeline: discovery, then scoring, then tailoring. | `Python` · `Supabase` · `LLM APIs` |
 | **Resume Optimizer Agent** | LLM agent that scores how well a resume fits a job description on a weighted rubric across four categories, then rewrites bullets to anchored length and impact rules. | `Claude API` · `Prompt Engineering` · `RAG` |
 | **FinanceOS** | Personal finance app with transaction intelligence, categorization, and forecasting. | `TypeScript` · `Supabase` · `Claude Code` |
