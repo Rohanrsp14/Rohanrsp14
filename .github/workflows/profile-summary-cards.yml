@@ -15,6 +15,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+      - name: Configure git identity
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
