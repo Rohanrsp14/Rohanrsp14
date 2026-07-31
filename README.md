@@ -1,15 +1,4 @@
-<!--
-=====================================================================
- STATS CARDS ARE RATE-LIMITED ON THE PUBLIC INSTANCE.
- The two commented-out cards in "GitHub Activity" will render once you:
-   1. Go to https://github.com/anuraghazra/github-readme-stats
-   2. Click "Deploy" -> deploy to your own Vercel account (free)
-   3. Add a GitHub PAT (classic, read-only) as PAT_1 in Vercel env vars
-   4. Replace "github-readme-stats.vercel.app" in those two URLs
-      with "your-instance-name.vercel.app", then uncomment them.
- The streak card below uses a different service and already works.
-=====================================================================
--->
+
 
 <div align="center">
 
@@ -36,31 +25,40 @@
 
 ### 🧭 What I do
 
-I'm a Technical Product Manager focused on **AI/ML products** like RAG systems, agentic workflows, and data products. I ship end to end: framing the problem, choosing the model, building the evals and retrieval layer, wiring the backend, and shipping the interface the user actually sees. Everything below is built from scratch to solve a real problem, not a tutorial rebuild.
+I'm a Technical Product Manager focused on **AI/ML products** — RAG systems, agentic workflows, and data products. I ship end to end: framing the problem, choosing the model, building the evals and retrieval layer, wiring the backend, and shipping the interface the user actually sees. Everything below is built from scratch to solve a real problem, not a tutorial rebuild.
+
+Currently targeting **Senior/Principal PM** and **Amazon PMT (L5/L6)** roles — domain depth in consumer lending/credit risk, fraud/AML/KYC, model governance, and supply chain.
+
+---
+
+### ⚙️ How I build
+
+- **Spec before code** — every project starts as a written PRD/spec, not a prompt.
+- **Eval-driven** — define what "correct" means and measure against it before trusting model output (gold-sample validation, Spearman correlation checks against human judgment).
+- **Deterministic gates over vibes** — rules-based checks wherever a rule can do the job; LLM judgment reserved for what actually needs it.
+- **Structured logging by default** — every agent/pipeline ships with a run logger, not print statements.
 
 ---
 
 ### 🚀 Featured Work
 
-> 📌 These five are pinned above. Each repo has its own README with the problem, the approach, and the outcome.
+> Each repo README has the problem, the approach, and the outcome.
 
 | Project | What it does | Stack |
 |---|---|---|
-| **[Credit-Risk-Monitor](https://github.com/Rohanrsp14/Credit-Risk-Monitor)** | Champion/challenger credit-risk model (Logistic Regression vs. XGBoost) on real 2022 HMDA Texas mortgage data, with a fair-lending parity screen, PSI drift monitoring, and an interactive Texas county risk heatmap. [Live demo →](https://credit-risk-monitor.streamlit.app) | `Python` · `XGBoost` · `Streamlit` · `HMDA Data` |
-| **[Lending-Policy-Simulator](https://github.com/Rohanrsp14/Lending-Policy-Simulator)** | Champion/challenger consumer-lending policy simulator on real Lending Club loan data — RAROC-based economic analysis (not just accuracy), a vintage loss-curve analysis, and a fair-lending screen. Independent-style model validation report documents every issue found and fixed, including a case where a statistically better model didn't translate to better economics. [Live demo →](https://lending-policy-simulator.streamlit.app) | `Python` · `scikit-learn` · `Streamlit` · `Lending Club Data` |
-| **Automated Job-Discovery Pipeline** | Pulls live job listings, scores fit against a weighted rubric, and tailors applications. Built as a modular pipeline: discovery, then scoring, then tailoring. | `Python` · `Supabase` · `LLM APIs` |
-| **Resume Optimizer Agent** | LLM agent that scores how well a resume fits a job description on a weighted rubric across four categories, then rewrites bullets to anchored length and impact rules. | `Claude API` · `Prompt Engineering` · `RAG` |
-| **FinanceOS** | Personal finance app with transaction intelligence, categorization, and forecasting. | `TypeScript` · `Supabase` · `Claude Code` |
+| **[Credit-Risk-Monitor](https://github.com/Rohanrsp14/Credit-Risk-Monitor)** | Champion/challenger credit-risk model (Logistic Regression vs. XGBoost) on real 2022 HMDA Texas mortgage data — 868K+ applications, fair-lending parity screen, PSI drift monitoring, interactive Texas county risk heatmap. [Live demo →](https://credit-risk-monitor.streamlit.app) | `Python` · `XGBoost` · `Streamlit` · `HMDA Data` |
+| **[Lending-Policy-Simulator](https://github.com/Rohanrsp14/Lending-Policy-Simulator)** | Champion/challenger consumer-lending policy simulator on real Lending Club data — RAROC-based economic analysis (not just accuracy), vintage loss-curve analysis, fair-lending screen. Documents a case where a statistically better model didn't translate to better economics. [Live demo →](https://lending-policy-simulator.streamlit.app) | `Python` · `scikit-learn` · `Streamlit` · `Lending Club Data` |
+| **[Sediment](https://github.com/Rohanrsp14/Sediment)** | Read-only analytics tool for Claude Code usage — stratigraphic HTML dashboard over your own session transcripts. Zero dependencies, 61 tests, all correctness defects caught against real transcript data. | `Node.js` · `Zero-dependency CLI` |
+| **TrueCut** *(WIP — repo coming soon)* | Agent cost-and-value control tool — offline/replay architecture with a deterministic benchmark suite so you can evaluate agent changes without burning live API spend. Apache-2.0. | `Python` · `Eval harness` |
+| **Resume Optimizer / PMT Scorer** | Deterministic scoring layer + LLM judge for resume-to-role fit, calibrated against a gold set (Spearman ρ = 0.857). Identified quantification as the highest-leverage gap in bullet writing. | `Claude API` · `Prompt Engineering` · `Eval harness` |
 
-<p>
-  <a href="https://credit-risk-monitor.streamlit.app">
-    <img src="https://img.shields.io/badge/Live%20Demo-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
-  </a>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
-  <img src="https://img.shields.io/badge/XGBoost-337AB7?style=flat-square"/>
-  <img src="https://img.shields.io/badge/HMDA%20Data-2E8B57?style=flat-square"/>
-</p>
+<!-- ⚠️ Push TrueCut to GitHub and swap in a real repo link once it's public -->
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://credit-risk-monitor.streamlit.app)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)]()
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)]()
+[![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=flat-square)]()
+[![HMDA Data](https://img.shields.io/badge/HMDA%20Data-2E8B57?style=flat-square)]()
 
 ---
 
@@ -68,85 +66,52 @@ I'm a Technical Product Manager focused on **AI/ML products** like RAG systems, 
 
 **AI / ML & LLMs**
 
-<p>
-  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
-  <img src="https://img.shields.io/badge/RAG-4B8BBE?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Agentic%20Workflows-0B7285?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/LLM%20Evals-2E8B57?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
-</p>
+[![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)]()
+[![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)]()
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)]()
+[![RAG](https://img.shields.io/badge/RAG-4B8BBE?style=for-the-badge)]()
+[![scikit--learn](https://img.shields.io/badge/scikit--learn-F79331?style=for-the-badge&logo=scikitlearn&logoColor=white)]()
 
 **Languages & Data**
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-</p>
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)]()
+[![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)]()
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)]()
 
 **Cloud & Infra**
 
-<p>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
-</p>
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)]()
+[![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)]()
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)]()
 
 **Product & Analytics**
 
-<p>
-  <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amplitude-1E61F0?style=for-the-badge&logo=amplitude&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
-</p>
+[![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)]()
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)]()
 
-<sub>🌱 Currently going deeper on: vector databases (pgvector / Pinecone), LLM observability (LangSmith), and multi-agent orchestration.</sub>
+🌱 Currently going deeper on: vector databases (pgvector / Pinecone), LLM observability (LangSmith), and multi-agent orchestration.
 
 ---
 
 ### 📊 GitHub Activity
 
-<div align="center">
+[![GitHub Streak](https://streak-stats.demolab.com?user=Rohanrsp14&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 
-<!-- Uncomment these two once your own github-readme-stats instance is deployed (see top of file):
-<img height="165em" src="https://YOUR-INSTANCE.vercel.app/api?username=Rohanrsp14&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="165em" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=Rohanrsp14&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
-<br/>
--->
+![GitHub Stats](https://raw.githubusercontent.com/Rohanrsp14/Rohanrsp14/main/profile-summary-card-output/tokyonight/0-profile-details.svg)
 
-<img src="https://streak-stats.demolab.com?user=Rohanrsp14&theme=tokyonight&hide_border=true"/>
+![Repos per Language](https://raw.githubusercontent.com/Rohanrsp14/Rohanrsp14/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg) ![Most Commit Language](https://raw.githubusercontent.com/Rohanrsp14/Rohanrsp14/main/profile-summary-card-output/tokyonight/2-most-commit-language.svg)
 
-</div>
-
-<!--
- OPTIONAL: contribution snake animation.
- Add the workflow from https://github.com/Platane/snk to
- .github/workflows/, then uncomment the line below.
- <img src="https://raw.githubusercontent.com/Rohanrsp14/Rohanrsp14/output/github-contribution-grid-snake-dark.svg"/>
--->
+![Stats](https://raw.githubusercontent.com/Rohanrsp14/Rohanrsp14/main/profile-summary-card-output/tokyonight/3-stats.svg) ![Productive Time](https://raw.githubusercontent.com/Rohanrsp14/Rohanrsp14/main/profile-summary-card-output/tokyonight/4-productive-time.svg)
 
 ---
 
 ### ✍️ Writing & Case Studies
 
-<!-- Link your Medium / personal site / project write-ups here.
-     A short PM-style teardown of one AI product decision is high-signal. -->
-- _Coming soon: how I designed the eval harness for my Resume Optimizer agent._
+- **[The economics of a "better" model](https://github.com/Rohanrsp14/Lending-Policy-Simulator)** — why a statistically stronger challenger model lost on RAROC, and what that means for how PMs should evaluate model upgrades.
+
+<!-- ⚠️ Replace with a real link once you've written this up — even 200-300 words in the Lending-Policy-Simulator README counts -->
 
 ---
 
-<div align="center">
-  <sub>Building AI products that ship. Open to AI Product Manager conversations.</sub>
-</div>
+Building AI products that ship. Open to Senior/Principal PM and Amazon PMT conversations.
