@@ -27,4 +27,9 @@ jobs:
           BRANCH_NAME: "main"
           UTC_OFFSET: -6
           EXCLUDE: ""
-          AUTO_PUSH: true
+          AUTO_PUSH: false
+      - name: Commit and push generated cards
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update profile summary cards"
+          file_pattern: "profile-summary-card-output/*"
